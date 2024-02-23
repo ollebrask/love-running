@@ -86,11 +86,17 @@ nav {
 }
 /*main content*/
 main {
-    background-color: lightblue;
     /* make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     /* make the text push down so its viewable*/
     margin-top: 47px;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+}
+
+/*hero section*/
+#hero {
+    height: 600px;
+    width: 100%;
 }
 /*footer*/
 #social-networks {
