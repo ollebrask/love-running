@@ -89,6 +89,8 @@ main {
     background-color: lightblue;
     /* make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    /* make the text push down so its viewable*/
+    margin-top: 47px;
 }
 /*footer*/
 footer {
