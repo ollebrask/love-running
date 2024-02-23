@@ -17,7 +17,12 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525
+}
 
 /*header*/
 header {
@@ -38,12 +43,7 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
+
 
 #menu {
     font-size: 110%;
@@ -90,13 +90,30 @@ main {
     flex: 1 0 auto;
     /* make the text push down so its viewable*/
     margin-top: 47px;
-    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 /*hero section*/
 #hero {
     height: 600px;
     width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    /*final value sets the opacity som it is sem-transparent */
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
+#cover-text > h2, #cover-text > h3 {
+    color: #ffffff
 }
 /*footer*/
 #social-networks {
@@ -140,11 +157,17 @@ main {
         line-height: 75px;
         margin: 0 0.5rem;
     }
-
+    
     /*main content*/
     main {
         /* push main content down to accommodate larger header */
         margin-top: 79px;
+    }
+
+    /* hero*/
+    #cover-text {
+        width: 300px;
+        right: 50px;
     }
 }
 /* larger screens than 992px*/
