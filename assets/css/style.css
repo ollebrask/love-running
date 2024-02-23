@@ -261,6 +261,6 @@ main {
     }
 
     #benefits-physical > div {
-        align-self: flex-start;
+        align-self: flex-end;
     }
 }
