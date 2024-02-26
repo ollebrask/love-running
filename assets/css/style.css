@@ -213,6 +213,14 @@ main {
     color: #3a3a3a;
 }
 
+/* media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /* media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     nav {
@@ -268,12 +276,22 @@ main {
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
 }
 /* larger screens than 992px*/
 @media screen and (min-width: 992px) {
     /*to get a border at the bottom when hovering over links*/
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;        
+    }
+
+    /* Gallery*/
+    #photos {
+        column-count: 4;
     }
 }
 
